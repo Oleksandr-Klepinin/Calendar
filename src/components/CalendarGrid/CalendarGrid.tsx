@@ -55,7 +55,7 @@ export const CalendarGrid = observer(() => {
         return (
             <DayCellContainer key={`prev-month-day-${i}`} isCurrentMonth={false}>
                 <DayNumber isCurrentMonth={false}>
-                    {day} {new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, day).toLocaleString('default', { month: 'short' })}
+                    {day} {new Date(currentDate.getFullYear(), currentDate.getMonth() - 1, day).toLocaleString('en-US', { month: 'short' })}
                 </DayNumber>
             </DayCellContainer>
         );
@@ -91,7 +91,7 @@ export const CalendarGrid = observer(() => {
         return (
             <DayCellContainer key={`next-month-day-${i}`} isCurrentMonth={false}>
                 <DayNumber isCurrentMonth={false}>
-                    {i + 1} {new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, i + 1).toLocaleString('default', { month: 'short' })}
+                    {i + 1} {new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, i + 1).toLocaleString('en-US', { month: 'short' })}
                 </DayNumber>
             </DayCellContainer>
         );

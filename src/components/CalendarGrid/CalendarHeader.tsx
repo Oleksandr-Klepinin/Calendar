@@ -16,7 +16,7 @@ export const CalendarHeader: React.FC<CalendarHeaderProps> = ({ currentDate, onP
                 <IconButton onClick={onPrevMonth}>
                     <ArrowBack />
                 </IconButton>
-                <span>{currentDate.toLocaleString('default', { month: 'long' })} {currentDate.getFullYear()}</span>
+                <span>{currentDate.toLocaleString('en-US', { month: 'long' })} {currentDate.getFullYear()}</span>
                 <IconButton onClick={onNextMonth}>
                     <ArrowForward />
                 </IconButton>
